@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.jpg" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Themefy Icons -->
         <link rel="stylesheet" href="assets/css/themify-icons.css">
         <!-- Plugins CSS -->
         <link rel="stylesheet" href="assets/css/plugins.css">
@@ -25,91 +25,27 @@
 
             <!-- Nav Menu Mobile -->
             <div class="nav__mobile-menu">
-                <a href="#" class="nav__link nav__link--active">
-                    <i class="material-icons nav__icon">home</i>
+                <a href="index.html" class="nav__link">
+                    <i class="ti-home nav__icon"></i>
                     <span class="nav__text">Home</span>
                 </a>
                 <a href="#" class="nav__link">
-                    <i class="material-icons nav__icon">message</i>
+                    <i class="ti-comment-alt nav__icon"></i>
                     <span class="nav__text">Messages</span>
                 </a>
                 <a href="#" class="nav__link">
-                    <i class="material-icons nav__icon">apps</i>
+                    <i class="ti-view-grid nav__icon"></i>
                     <span class="nav__text">Categories</span>
                 </a>
-                <a href="#" class="nav__link">
-                    <i class="material-icons nav__icon">shopping_basket</i>
+                <a href="shopping-cart.html" class="nav__link">
+                    <i class="ti-shopping-cart nav__icon"></i>
                     <span class="nav__text">Your Cart</span>
                 </a>
-                <a href="#" class="nav__link" data-toggle="modal" data-target="#myModal">
-                    <i class="material-icons nav__icon">person</i>
-                    <span class="nav__text">Account</span>
+                <a href="authentication.html" class="nav__link nav__link--active">
+                    <i class="ti-lock nav__icon"></i>
+                    <span class="nav__text">Authentication</span>
                 </a>
             </div>
-
-            <!-- Modal -->
-            <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div style="display: flex; padding: 20px; justify-content: space-between;">
-                            <i class="material-icons text-left close" data-dismiss="modal" aria-label="Close" aria-hidden="true">navigate_before</i>
-                            <h6>Account Settings</h6>
-                        </div>
-                      
-
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-									<!--Product Feature-->
-									<div class="prFeatures">
-										<div class="row">
-											<div class="feature">
-												<img src="assets/images/credit-card.png" alt="Safe Payment" title="Safe Payment" />
-												<div class="account-details"><h5>Manage My Account</h5>Pay with the world's most payment methods.</div>
-											</div>
-											<div class="feature">
-												<img src="assets/images/shield.png" alt="Confidence" title="Confidence" />
-												<div class="account-details"><h5>My Orders</h5>Protection covers your purchase and personal data.</div>
-											</div>
-											<div class="feature">
-												<img src="assets/images/worldwide.png" alt="Worldwide Delivery" title="Worldwide Delivery" />
-												<div class="account-details"><h5>My Wishlist &amp; Followed Store</h5>FREE &amp; fast shipping to over 200+ countries &amp; regions.</div>
-											</div>
-											<div class="feature">
-												<img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
-												<div class="account-details"><h5>My Reviews</h5>Talk to help line for your question</div>
-                                            </div>
-                                            <div class="feature">
-                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
-                                                <div class="account-details"><h5>My Returns &amp; Cancellations</h5>Talk to help line for your question</div>
-                                            </div>
-                                            <div class="feature">
-                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
-                                                <div class="account-details"><h5>My Payment Option</h5>Talk to help line for your question</div>
-                                            </div>
-                                            <div class="feature">
-                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
-                                                <div class="account-details"><h5>Trietrade Wallet</h5>Talk to help line for your question</div>
-                                            </div>
-                                            <div class="feature">
-                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
-                                                <div class="account-details"><h5>Sell on Trietrade</h5>Talk to help line for your question</div>
-                                            </div>
-                                            <div class="feature">
-												<img src="assets/images/worldwide.png" alt="Worldwide Delivery" title="Worldwide Delivery" />
-												<div class="account-details"><h5>Logout</h5>FREE &amp; fast shipping to over 200+ countries &amp; regions.</div>
-											</div>
-										</div>
-									</div>
-									<!--End Product Feature-->
-								</div>
-                            </div>
-                            
-                        </div>
-
-                    </div><!-- modal-content -->
-                </div><!-- modal-dialog -->
-            </div><!-- modal -->
             
         	<!--Search Form Drawer-->
         	<div class="search">
@@ -233,7 +169,7 @@
                 <!--Page Title-->
                 <div class="page section-header text-center mb-0">
                     <div class="page-title">
-                        <div class="wrapper"><h1 class="page-width">My Followed Stores</h1></div>
+                        <div class="wrapper"><h1 class="page-width">Trietrade's Account</h1></div>
                       </div>
                 </div>
                 <!--End Page Title-->
@@ -241,33 +177,35 @@
                     <div class="container breadcrumbs">
                         <a href="index.html" title="Back to the home page">Home</a>
                         <span aria-hidden="true">›</span>
-                        <a href="manage-account.html" title="Back to the home page">Manage Account</a>
-                        <span aria-hidden="true">›</span>
-                        <span>Followed Stores</span>
+                        <span>Authentication</span>
                     </div>
                 </div>
         
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card card-1">
-                                <h3>Trietrade Store Name</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum eius sequi iure facere quidem. Iste exercitationem, delectus culpa.</p>
-                                <div>
-                                    <a href="store.html" class="btn">Visit Store</a>
-                                    <button type="button" class="btn"  data-toggle="modal" data-target="#unfollowStoreDialog">Unfollow Store</button>
+                            <a href="login.html">
+                                <div class="card card-1">
+                                    <h3>Login</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum eius sequi iure facere quidem. Iste exercitationem, delectus culpa.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-6">
-                            <div class="card card-2">
-                                <h3>Trietrade Store Name</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum eius sequi iure facere quidem. Iste exercitationem, delectus culpa.</p>
-                                <div>
-                                    <a href="store.html" class="btn">Visit Store</a>
-                                    <button type="button" class="btn"  data-toggle="modal" data-target="#unfollowStoreDialog">Unfollow Store</button>
+                            <a href="register.html">
+                                <div class="card card-2">
+                                    <h3>Register</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum eius sequi iure facere quidem. Iste exercitationem, delectus culpa.</p>
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="seller-registration.html">
+                                <div class="card card-3">
+                                    <h3>Trietrade Seller</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum eius sequi iure facere quidem. Iste exercitationem, delectus culpa.</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -276,26 +214,6 @@
             </div>
             <!--End Body Content-->
 
-            <!-- Modal Cash on Delivery Dialog -->
-            <div class="modal" id="unfollowStoreDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel-2"><i class="ti-info-alt"></i>&nbsp; Confirmation</h4>
-                        </div>
-        
-                        <div class="modal-body">
-                            <p>Are you sure you want to unfollow this store?</p>
-                        </div>
-        
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dialog" data-dismiss="modal">Cancel</button>
-                            <a href="#" class="btn btn-dialog">Unfollow</a>
-                        </div>
-                    </div><!-- modal-content -->
-                </div><!-- modal-dialog -->
-            </div><!-- modal -->
-    
             <!--Footer-->
             <footer id="footer" class="footer-2">
                 <div class="site-footer">

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.jpg" />
-        <!-- Themefy Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/themify-icons.css">
         <!-- Plugins CSS -->
         <link rel="stylesheet" href="assets/css/plugins.css">
@@ -25,30 +25,92 @@
 
             <!-- Nav Menu Mobile -->
             <div class="nav__mobile-menu">
-                <a href="index.html" class="nav__link">
-                    <i class="ti-home nav__icon"></i>
+                <a href="#" class="nav__link nav__link--active">
+                    <i class="material-icons nav__icon">home</i>
                     <span class="nav__text">Home</span>
                 </a>
                 <a href="#" class="nav__link">
-                    <i class="ti-comment-alt nav__icon"></i>
+                    <i class="material-icons nav__icon">message</i>
                     <span class="nav__text">Messages</span>
-                    <div class="badge badge-number--notif"><span>10</span></div>
                 </a>
                 <a href="#" class="nav__link">
-                    <i class="ti-view-grid nav__icon"></i>
+                    <i class="material-icons nav__icon">apps</i>
                     <span class="nav__text">Categories</span>
                 </a>
-                <a href="shopping-cart.html" class="nav__link">
-                    <i class="ti-shopping-cart nav__icon"></i>
+                <a href="#" class="nav__link">
+                    <i class="material-icons nav__icon">shopping_basket</i>
                     <span class="nav__text">Your Cart</span>
-                    <div class="badge badge-number--notif"><span>3</span></div>
                 </a>
-                <a href="authentication.html" class="nav__link">
-                    <i class="ti-lock nav__icon"></i>
-                    <span class="nav__text">Authentication</span>
+                <a href="#" class="nav__link" data-toggle="modal" data-target="#myModal">
+                    <i class="material-icons nav__icon">person</i>
+                    <span class="nav__text">Account</span>
                 </a>
             </div>
 
+            <!-- Modal -->
+            <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div style="display: flex; padding: 20px; justify-content: space-between;">
+                            <i class="material-icons text-left close" data-dismiss="modal" aria-label="Close" aria-hidden="true">navigate_before</i>
+                            <h6>Account Settings</h6>
+                        </div>
+                      
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+									<!--Product Feature-->
+									<div class="prFeatures">
+										<div class="row">
+											<div class="feature">
+												<img src="assets/images/credit-card.png" alt="Safe Payment" title="Safe Payment" />
+												<div class="account-details"><h5>Manage My Account</h5>Pay with the world's most payment methods.</div>
+											</div>
+											<div class="feature">
+												<img src="assets/images/shield.png" alt="Confidence" title="Confidence" />
+												<div class="account-details"><h5>My Orders</h5>Protection covers your purchase and personal data.</div>
+											</div>
+											<div class="feature">
+												<img src="assets/images/worldwide.png" alt="Worldwide Delivery" title="Worldwide Delivery" />
+												<div class="account-details"><h5>My Wishlist &amp; Followed Store</h5>FREE &amp; fast shipping to over 200+ countries &amp; regions.</div>
+											</div>
+											<div class="feature">
+												<img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
+												<div class="account-details"><h5>My Reviews</h5>Talk to help line for your question</div>
+                                            </div>
+                                            <div class="feature">
+                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
+                                                <div class="account-details"><h5>My Returns &amp; Cancellations</h5>Talk to help line for your question</div>
+                                            </div>
+                                            <div class="feature">
+                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
+                                                <div class="account-details"><h5>My Payment Option</h5>Talk to help line for your question</div>
+                                            </div>
+                                            <div class="feature">
+                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
+                                                <div class="account-details"><h5>Trietrade Wallet</h5>Talk to help line for your question</div>
+                                            </div>
+                                            <div class="feature">
+                                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
+                                                <div class="account-details"><h5>Sell on Trietrade</h5>Talk to help line for your question</div>
+                                            </div>
+                                            <div class="feature">
+												<img src="assets/images/worldwide.png" alt="Worldwide Delivery" title="Worldwide Delivery" />
+												<div class="account-details"><h5>Logout</h5>FREE &amp; fast shipping to over 200+ countries &amp; regions.</div>
+											</div>
+										</div>
+									</div>
+									<!--End Product Feature-->
+								</div>
+                            </div>
+                            
+                        </div>
+
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+            
         	<!--Search Form Drawer-->
         	<div class="search">
                 <div class="search__form">
@@ -120,82 +182,24 @@
                                     <i class="icon anm anm-bag-l"></i>
                                     <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
                                 </a>
-                                <!--Minicart Popup-->
-                                <div id="header-cart" class="block block-cart">
-                                    <ul class="mini-products-list">
-                                        <li class="item">
-                                            <a class="product-image" href="#">
-                                                <img src="assets/images/autoparts/categories-img1.jpg" alt="3/4 Sleeve Kimono Dress" title="" />
-                                            </a>
-                                            <div class="product-details">
-                                                <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
-                                                <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                                <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
-                                                <div class="variant-cart">Black / XL</div>
-                                                <div class="wrapQtyBtn">
-                                                    <div class="qtyField">
-                                                        <span class="label">Qty:</span>
-                                                        <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
-                                                        <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
-                                                        <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="priceRow">
-                                                    <div class="product-price">
-                                                        <span class="money">&#8369;59.00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <a class="product-image" href="#">
-                                                <img src="assets/images/autoparts/categories-img2.jpg" alt="Elastic Waist Dress - Black / Small" title="" />
-                                            </a>
-                                            <div class="product-details">
-                                                <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
-                                                <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                                <a class="pName" href="cart.html">Elastic Waist Dress</a>
-                                                <div class="variant-cart">Gray / XXL</div>
-                                                <div class="wrapQtyBtn">
-                                                    <div class="qtyField">
-                                                        <span class="label">Qty:</span>
-                                                        <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
-                                                        <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
-                                                        <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="priceRow">
-                                                    <div class="product-price">
-                                                        <span class="money">&#8369;99.00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="total">
-                                        <div class="total-in">
-                                            <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">&#8369;748.00</span></span>
-                                        </div>
-                                        <div class="buttonSet text-center">
-                                            <a href="shopping-cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                                            <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--End Minicart Popup-->
                             </div>
                             <div class="site-header__search">
                                 <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
                             </div>
                         </div>
                     </div>
-                
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
+                </div>
+            </div>
+
+            <!--Nav Menu Bottom Header-->
+            <div class="d-flex border-bottom">
+            	<div class="container-fluid">        
+                    <div class="row">
+                        <div class="col-lg-12">
                         	<!--Desktop Menu-->
-                        	<div class="bottomNav-menu">
+                        	<nav class="grid__item text-left">
                                 <ul id="siteNav" class="site-nav medium hidearrow">
-                                    <li class="lvl1 parent megamenu text-lowercase"><a href="#"><img src="assets/images/category.png" width="18">&nbsp; Categories <i class="anm anm-angle-down-l"></i></a>
+                                    <li class="lvl1 parent megamenu text-lowercase"><a href="#"><img src="assets/images/worldwide.png" width="30"> Categories <i class="anm anm-angle-down-l"></i></a>
                                         <div class="megamenu style1">
                                             <ul class="grid mmWrapper">
                                                 <li class="grid__item large-up--one-whole">
@@ -211,114 +215,75 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="#"><img src="assets/images/market.png" width="18">&nbsp; Trietrade Market</a></li>
-                                    <li><a href="#"><img src="assets/images/gift.png" width="18">&nbsp; Just For You</a></li>
-                                    <li><a href="vouchers.html"><img src="assets/images/voucher.png" width="18">&nbsp; Vouchers</a></li>
-                                    <li><a href="#"><img src="assets/images/trending.png" width="18">&nbsp; Trending</a></li>
+                                    <li><a href="#">Trietrade Market <i class="anm anm-angle-down-l"></i></a></li>
+                                    <li><a href="#">Just For You <i class="anm anm-angle-down-l"></i></a></li>
+                                    <li><a href="#">Vouchers <i class="anm anm-angle-down-l"></i></a></li>
+                                    <li><a href="#">Trending <i class="anm anm-angle-down-l"></i></a></li>
                                 </ul>
-                            </div>
+                            </nav>
                             <!--End Desktop Menu-->
                         </div>
                 	</div>
                 </div>
             </div>
             <!--End Header-->
-        
+    
             <!--Body Content-->
             <div id="page-content">
-                <!--Home slider-->
-                <div class="slideshow slideshow-wrapper pb-section">
-                    <div class="home-slideshow">
-                        <div class="slide">
-                            <div class="blur-up lazyload">
-                                <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home8-jewelry-banner1.jpg" src="assets/images/slideshow-banners/home8-jewelry-banner1.jpg" alt="Shop Our New Collection" title="Shop Our New Collection" />
-                                <div class="slideshow__text-wrap slideshow__overlay classic middle">
-                                    <div class="slideshow__text-content middle">
-                                        <div class="container">
-                                            <div class="wrap-caption right">
-                                                <h2 class="h1 mega-title slideshow__title">Our New Collection</h2>
-                                                <span class="mega-subtitle slideshow__subtitle">Save up to 50% Off</span>
-                                                <span class="btn">Shop now</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!--Page Title-->
+                <div class="page store-section-header text-center mb-0" style="background-image: url('assets/images/slideshow-banners/home11-grid-banner2.jpg');">
+                    <div class="page-title">
+                        <div class="wrapper"><h1 class="page-width">My Followed Stores</h1></div>
+                      </div>
+                </div>
+                <!--End Page Title-->
+        
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-3">
+                                <h3>Trietrade Store Name</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum eius sequi iure facere quidem. Iste exercitationem, delectus culpa.</p>
+                                <div class="social-sharing">
+                                    <a href="javascript:void();" class="btn btn--small btn--secondary btn--share share-facebook" >
+                                        <span class="share-title" aria-hidden="true">125 Posts</span>
+                                    </a>
+                                    <a href="javascript:void();" class="btn btn--small btn--secondary btn--share share-twitter">
+                                        <span class="share-title" aria-hidden="true">20k Followers</span>
+                                    </a>
+                                    <a href="javascript:void();" class="btn btn--small btn--secondary btn--share" >
+                                        <span class="share-title" aria-hidden="true">90% Ratings</span>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="blur-up lazyload">
-                                <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home8-jewelry-banner2.jpg" src="assets/images/slideshow-banners/home8-jewelry-banner2.jpg" alt="Summer Bikini Collection" title="Summer Bikini Collection" />
-                                <div class="slideshow__text-wrap slideshow__overlay classic middle">
-                                    <div class="slideshow__text-content middle">
-                                        <div class="container">
-                                            <div class="wrap-caption left">
-                                                <h2 class="h1 mega-title slideshow__title">Fashion &amp; Show</h2>
-                                                <span class="mega-subtitle slideshow__subtitle">A World Fashion and Trendy Fashion Clother's</span>
-                                                <span class="btn">Shop now</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="social-sharing mt-4">
+                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-facebook" title="Share on Facebook">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Share</span>
+                                    </a>
+                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-twitter" title="Tweet on Twitter">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Tweet</span>
+                                    </a>
+                                    <a href="#" title="Share on google+" class="btn btn--small btn--secondary btn--share" >
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Google+</span>
+                                    </a>
+                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-pinterest" title="Pin on Pinterest">
+                                        <i class="fa fa-pinterest" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Pin it</span>
+                                    </a>
+                                    <a href="#" class="btn btn--small btn--secondary btn--share share-pinterest" title="Share by Email" target="_blank">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Email</span>
+                                    </a>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="" class="btn"><i class="ti-comment-alt"></i>&nbsp; Chat Now</a>
+                                    <button type="button" class="btn"  data-toggle="modal" data-target="#unfollowStoreDialog"><i class="ti-plus"></i>&nbsp; Follow Store</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--End Home slider-->
-                
-                <div class="container">
-                    <div class="row">
-                        <!--Main Content-->
+
+                    <div class="row mt-4">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col shop-grid-6">
                             <div class="section-header">
-                                <h2 class="h2">Flash Sale</h2>
-                            </div>
-                            <div class="productList">
-                                <div class="grid-products grid--view-items product-load-more">
-                                    <div class="row">
-
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-2 item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="product-details.html">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img1.jpg" src="assets/images/autoparts/categories-img1.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img1.jpg" src="assets/images/autoparts/categories-img1.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="product-details.html">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;388.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <span class="price text-muted"><strike>&#8369;788.00</strike> - 50%</span>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col shop-grid-6">
-                            <div class="section-header">
-                                <h2 class="h2">Just For You</h2>
+                                <h2 class="h2">All Products</h2>
                                 <p>Our most popular products based on sales</p>
                             </div>
                             <div class="productList">
@@ -574,13 +539,34 @@
                                 </div>
                             </div>
                         </div>
-                        <!--End Main Content-->
                     </div>
+
                 </div>
-                
+
+                </div>
             </div>
             <!--End Body Content-->
+
+            <!-- Modal Cash on Delivery Dialog -->
+            <div class="modal" id="unfollowStoreDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel-2"><i class="ti-info-alt"></i>&nbsp; Confirmation</h4>
+                        </div>
         
+                        <div class="modal-body">
+                            <p>Are you sure you want to follow this store?</p>
+                        </div>
+        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dialog" data-dismiss="modal">Cancel</button>
+                            <a href="#" class="btn btn-dialog">Follow Now</a>
+                        </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+    
             <!--Footer-->
             <footer id="footer" class="footer-2">
                 <div class="site-footer">
@@ -650,7 +636,6 @@
             <!-- Including Javascript -->
             <script src="assets/js/bootstrap.min.js"></script>
             <script src="assets/js/plugins.js"></script>
-            <script src="assets/js/popper.min.js"></script>
             <script src="assets/js/lazysizes.js"></script>
             <script src="assets/js/main.js"></script>
             

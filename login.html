@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.png" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
         <!-- Plugins CSS -->
         <link rel="stylesheet" href="assets/css/plugins.css">
         <!-- Bootstap CSS -->
@@ -24,25 +25,25 @@
 
             <!-- Nav Menu Mobile -->
             <div class="nav__mobile-menu">
-                <a href="#" class="nav__link nav__link--active">
-                    <i class="material-icons nav__icon">home</i>
+                <a href="index.html" class="nav__link">
+                    <i class="ti-home nav__icon"></i>
                     <span class="nav__text">Home</span>
                 </a>
                 <a href="#" class="nav__link">
-                    <i class="material-icons nav__icon">message</i>
+                    <i class="ti-comment-alt nav__icon"></i>
                     <span class="nav__text">Messages</span>
                 </a>
                 <a href="#" class="nav__link">
-                    <i class="material-icons nav__icon">apps</i>
+                    <i class="ti-view-grid nav__icon"></i>
                     <span class="nav__text">Categories</span>
                 </a>
-                <a href="#" class="nav__link">
-                    <i class="material-icons nav__icon">shopping_basket</i>
+                <a href="shopping-cart.html" class="nav__link">
+                    <i class="ti-shopping-cart nav__icon"></i>
                     <span class="nav__text">Your Cart</span>
                 </a>
-                <a href="#" class="nav__link">
-                    <i class="material-icons nav__icon">person</i>
-                    <span class="nav__text">Account</span>
+                <a href="authentication.html" class="nav__link nav__link--active">
+                    <i class="ti-lock nav__icon"></i>
+                    <span class="nav__text">Authentication</span>
                 </a>
             </div>
             
@@ -271,6 +272,13 @@
 											<a href="forgot-password.html" id="RecoverPassword">Forgot your password?</a> &nbsp; | &nbsp;
 											<a href="register.html" id="customer_register_link">Create account</a>
 										</p>
+                                    </div>
+                                    <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
+										<p class="mb-4">
+											Or, login with
+                                        </p>
+                                        <button type="button" class="btn"><i class="ti-facebook"></i>&nbsp; Facebook</button>
+                                        <button type="button" class="btn" style="background: #f25a62;"><i class="ti-google"></i>&nbsp; Google</button>
 									</div>
 								</div>
 							</form>
