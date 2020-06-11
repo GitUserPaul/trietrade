@@ -242,7 +242,7 @@
 	
 	.collection-hero h1.collection-hero__title, .collection-hero .collection-hero__title.h1 { font-size:18px; }
 	
-	.filterbar { padding:20px; opacity:0; visibility:hidden; width:240px; height:100%; overflow:auto; background-color:#fff; box-shadow:0 0 5px rgba(0,0,0,0.3); position:fixed; top:0; 
+	.filterbar { padding:20px; opacity:0; visibility:hidden; height:100%; overflow:auto; background-color:#fff; box-shadow:0 0 5px rgba(0,0,0,0.3); position:fixed; top:0; 
 		left:-240px; z-index:1000; -ms-transition:0.5s; -webkit-transition:0.5s; transition:0.5s; }
 	.btn-filter { margin-bottom:20px; width:100%; }
 	.filterbar .sidebar_widget:not(.filterBox), .filterbar .static-banner-block { display:none; }

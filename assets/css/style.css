@@ -226,7 +226,7 @@ th { font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:700; }
 .search .go-btn { position:absolute; left:0; top:10px; }
 .search .close-btn { position:absolute; right:0; top:1px; font-size:18px; line-height:normal; display:block; border:0; padding:5px; cursor:pointer; }
 
-.bottomNav-menu {margin-left: -25px;}
+.bottomNav-menu {margin-left: 205px;}
 #siteNav.bottomNav-menu {margin-left: 16px;}
 #siteNav { position:relative; max-width:1100px; padding:0; list-style:none; }
 #siteNav.right { text-align:right; }
@@ -633,7 +633,7 @@ a.quick-view { margin-bottom:5px !important; }
 .filters-toolbar-wrapper .change-view { cursor:pointer; background:none; opacity:0.6; border:0; padding:0 3px; }
 .filters-toolbar-wrapper .change-view--active { opacity:1; }
 .filters-toolbar__product-count { font-size:0.92308em; line-height:35px; margin-bottom:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.filters-toolbar-wrapper select { width:auto; font-size:12px; }
+.filters-toolbar-wrapper select { width:100%; font-size:12px; }
 .filters-toolbar__input { -ms-transition: all ease-out 0.15s; -webkit-transition:all ease-out 0.15s; transition:all ease-out 0.15s; background-color: #fff; border:0 solid transparent; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:100%; height:35px; opacity:1; }
 
 .infinitpagin { clear:both; padding:15px 0 30px; text-align:center; }
@@ -648,10 +648,10 @@ a.quick-view { margin-bottom:5px !important; }
 
 /* Countdown Timer On listing */
 .grid-products .item:hover .saleTime { display:none }
-.saleTime { position:absolute; bottom:5px; left:0; right:0; z-index:111 }
+.saleTime { bottom:5px; left:0; right:0; z-index:111 }
 .saleTime .time-count { font-weight:700; font-size:14px; }
-.saleTime span>span { font-weight:700; min-width:30px; padding:6px 4px 4px; line-height:12px; display:inline-block; margin:0 0 0 1px; text-align:center; background:rgba(255, 255, 255, 0.9); color:#141414 }
-.saleTime span>span span { display:block; background:none; font-size:10px; font-weight:400; margin-top:-3px; text-transform:uppercase; line-height:8px }
+.saleTime span>span { font-weight:500; min-width:30px; padding:15px; display:inline-block; margin:0 0 0 -5px; text-align:center; background:rgba(255, 255, 255, 0.9); color:#fff }
+.saleTime span>span span { display:block; background: #1d7ae2; font-size:10px; font-weight:400; margin-top:-3px; text-transform:uppercase; line-height:1px }
 .timermobile { margin:0 -10px; display:none }
 .timermobile .saleTime { position:relative; margin-top:20px }
 
@@ -1334,7 +1334,6 @@ input.checkbox { height:auto; vertical-align:middle; padding:0; box-shadow:none;
 
 .search-field {
    	z-index: 0;
-    width: 250%;
     height: 45px;
     background:#eff0f5;
    	border:1px solid #ccc !important;
@@ -1621,3 +1620,4 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
   font-weight: 100;
   font-size: 7px;
 }
+

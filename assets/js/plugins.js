@@ -1,12 +1,4 @@
-/*********************************************************************************
-	Template Name: Belle - Multipurpose eCommerce Bootstrap4 Template
-	Description: A perfect template to build beautiful and unique Glasses websites. It comes with nice and clean design.
-	Version: 1.0
 
-**********************************************************************************/
-
-/**************************************************************
-***************************************************************/
 
 
 /*************************************
